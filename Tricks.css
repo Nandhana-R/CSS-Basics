@@ -1,0 +1,20 @@
+body{
+    background-image: url("https://i.pinimg.com/736x/b6/af/ac/b6afac56ef0a4b5eeedd31c24667d721.jpg");
+    margin-right: auto;
+    background-color: rgb(236, 139, 155);
+    background-blend-mode: screen;
+}
+.tr{
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    width: 30%;
+    height: 30%;
+    background-color: rgb(250, 8, 88);
+    position: absolute;
+    z-index: -1;
+    margin-top: 200px;
+    margin-left: 400px;
+}
+h1{
+    padding-left: 50px;
+    padding-top: 45px;
+}

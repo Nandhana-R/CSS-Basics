@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <style>
+        .parent{
+            background-color: palevioletred;
+            height: 200px;
+            width: 200px;
+        }
+        .child{
+            background-color: tomato;
+            height: 50%;
+            width: 50%;
+        }
+        .parent:hover .child{
+            background-color: tomato;
+            animation-name: example;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes example{
+            0%{
+                transform: translateX(0%);
+            }
+            25%{
+                transform: translateY(100%);
+            }
+            50%{
+                transform: translateX(100%) translateY(100%);
+            }
+            75%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(0%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+</html>
