@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Pseudo Elements</title>
+        <style>
+            body{
+                text-align: center;
+            }
+            h1::first-letter{
+                font-size: 3cm;
+                font-family: Calibri;
+                color: brown;
+                text-shadow: 5px 8px 10px brown;
+            }
+            q::before{
+                content: "<<";
+                color: blue;
+            }
+            q::after{
+                content: ">>";
+                color: red;
+            }
+            h3{
+                color: tomato;
+            }
+            div{
+                margin-left: 600px;
+                display: block;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                left: calc(50% , -1em);
+                border-radius: 1.3em;
+                transform-origin: 1.3em 2em;
+                animation: rotate;
+                animation-iteration-count: infinite;
+                animation-duration: 2s;
+            }
+            @keyframes rotate{
+                0%{transform: rotate(0deg);}
+                100%{transform: rotate(360deg);}
+            }
+            .a1{
+                animation-delay: 0.1s;
+                background-color: teal;
+            }
+            .a2{
+                animation-delay: 0.2s;
+                background-color: tomato;
+            }
+            .a3{
+                animation-delay: 0.3s;
+                background-color: aquamarine;
+            }
+            .a4{
+                animation-delay: 0.4s;
+                background-color: burlywood;
+            }
+            .a1{
+                animation-delay: 0.5s;
+                background-color: gold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to front end tutorial!</h1>
+        <h2>This is a first Letter Pseudo Element Example</h2><br><hr><br>
+
+        <q>Welcome</q> To <q>Front End Tutorial</q><br><br><hr><br>
+
+        <h3>Welcome To Front End Tutorial</h3>
+        <div class="a1"></div>
+        <div class="a2"></div>
+        <div class="a3"></div>
+        <div class="a4"></div>
+        <div class="a5"></div>
+    </body>
+</html>
